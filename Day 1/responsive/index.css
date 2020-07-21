@@ -1,0 +1,62 @@
+body {
+  margin: 2rem;
+  font: 12px;
+}
+button{
+  padding: 2mm;
+  margin: 5mm;
+  border: 1pt solid #888888;
+  background-color: transparent;
+  color: white;
+}
+.landing {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #353535;
+  padding: 4mm 2mm;
+  color: white;
+}
+.landing > div {
+  text-align: center;
+}
+.two {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  /*repeat(auto-fill, minmax(200px, 1fr))*/
+}
+.two > div {
+  background: #ebebeb;
+  padding: 1.5rem;
+}
+.title {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  /*repeat(auto-fill, minmax(200px, 1fr))*/
+}
+.three{
+  display: grid;
+  grid-template-columns: .33fr .33fr .33fr;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #353535;
+  grid-gap: 1mm;
+}
+.im{
+  width: 50%;
+  padding-top: 2mm;
+}
+.card{
+  padding: 2mm;
+  background-color: white;
+}
+#grey{
+  background-color: #ebebeb;
+}
+#white{
+  background-color: white;
+  color: black;
+}
+#blue{
+background-color: rgb(28, 110, 204);
+}

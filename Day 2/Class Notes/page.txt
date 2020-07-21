@@ -1,0 +1,8 @@
+git init --> initialize git 
+git status --> see status 
+git add pagename 
+git commit -m "My first commit"
+git add . (update changes)
+
+adding stages a file and yu can only commit staged files 
+add push commit 

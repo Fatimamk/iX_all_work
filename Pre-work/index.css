@@ -1,0 +1,17 @@
+
+#headshot{
+    width: 40%;
+    border-radius: 2rem;
+}
+.bod{
+    text-align: center;  
+    padding: 0% 10%;
+    font-family: Helvetica, sans-serif;
+    background-color: aliceblue;
+    padding: 3rem 0rem;
+    border-radius: 2rem;
+}
+.caption{
+    font-size: 10pt;
+}
+
