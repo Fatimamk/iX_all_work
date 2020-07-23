@@ -18,7 +18,6 @@ class Task {
               console.log(data);
               Object.keys(data).forEach(key => {
 
-  
                 const taskId = data[key].id; 
                 const taskTitle = data[key].title;
                 const task = new Task(taskId, taskTitle);
@@ -139,7 +138,7 @@ class Task {
                 taskDb.update({
                   id: i,
                 }); 
-                
+       
               })          
         })
       });
@@ -151,7 +150,7 @@ class Task {
   }
 
   
-  const taskListPage = new TaskListPage();
+  const taskListPage = new TaskListPage( );
   
   document.getElementById("addBtn").addEventListener("click", (e) => {
     const taskInputElement = document.getElementById("task");
@@ -181,47 +180,3 @@ class Task {
     }
 
   });
-/*
-  document.getElementById("fetchTasks").addEventListener("click", (e) => {
-    const url = "https://day-5-ix.firebaseio.com/tasks.json";
-
-    fetch(url).then(
-        res =>{
-            return res.json().then(
-                data => {console.log(data)
-                    const array= [];
-                    Object.keys(data).forEach((key)=>{
-                        array.push(data[key])
-                        console.log(array);
-                        console.log(array[0].title);
-                    })
-                }
-            )
-        }
-    )
-
-
-  }); */
-
-  // function getData2(prop1, prop2) {
-  
-  // }
-  
-  // function getData(propertyHolder) {
-  //     //propertyHolder.prop1
-  //     //propertyHolder.prop2
-  // }
-  
-  // function getData() {
-  //     this.prop1 = "a";
-  //     this.prop2 = "b";
-  
-  //     getData2(this.prop1, this.prop2);
-  // }
-
-  /*
-  firebase.database().ref('tasks/' + key).set({
-            task: this.tasks[k],
-            title: taskInputElement.setAttribute("data-task-id", task.id),
-          });
-  */
